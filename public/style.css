@@ -1,0 +1,294 @@
+:root{
+  --yazi1: #C5A6FF;
+  --yazi2: #fff;
+  --yazi3: #000;
+  --back1: #000;
+  --back2: #C5A6FF;
+  --back3: #111;
+  --back4: #222;
+  --back5: #333;
+  --back6: #444;
+  --back7: #fff;
+  --buton1: #abcdef;
+  --buton2: #D0B8FF;
+  --buton3: #8747FF;
+  --buton4: #000;
+  --buton5: #111;
+  --buton6: #222;
+  --buton7: #333;
+  --buton8: #444;
+  --buton9: #C5A6FF;
+}
+
+body{
+  background: var(--back1);
+    padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+::-webkit-scrollbar {
+         width: 8px;
+         /* Sadece sağ taraftaki scroll a etki eder. */
+         height: 8px;
+         /* Sedece altta çıkan scroll a etki eder. */
+         background: rgb(172, 172, 172);
+      }
+
+      ::-webkit-scrollbar-thumb {
+         background: var(--buton9);
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-track {
+         background: var(--buton4);
+      }
+
+.screen{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+   font-family: monospace;
+  display: block;
+    align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.text1{
+  color: #C5A6FF;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: var(--back1);
+  position: relative;
+  animation: text 5s 1;
+  display: block;
+}
+.text2{
+  font-size: 30px;
+  color: var(--yazi2);
+}
+
+@keyframes text {
+  0%{
+    color: var(--back1);
+    margin-bottom: -50px;
+  }
+      15%{
+    color: var(--back1);
+    margin-bottom: -50px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -50px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -50px;
+  }
+}
+
+/*Profil Card*/
+.zuzia{
+  color: var(--yazi1);
+}
+.profiles{
+  border-radius: 15%;
+  width: 500px;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  color: var(--yazi2);
+  font-family: monospace;
+  background:  var(--back1);
+}
+
+.profiles img {
+  border-radius: 25px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border-style: dotted;
+ border-width: 3px;
+  
+}
+.bkz h1{
+  font-size: 39px;
+letter-spacing: 4px;
+font-weight: 100;
+}
+.bkz h4{
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.card{
+  border-radius: 15%;
+  width: 500px;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  color: var(--yazi2);
+  font-family: monospace;
+  background:  var(--back1);
+}
+.text h4{
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+
+
+.project{
+  border-radius: 15px;
+  width: 825px;
+  height: 315px;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 160px;
+  margin-bottom: 190px;
+  color: var(--yazi2);
+  font-family: monospace;
+  border: 1px solid #000;
+}
+
+.box{
+  border-radius: 15px;
+  width: 350px;
+  height: 60px;
+  background:  var(--back3);
+  margin-top: 15px;
+  margin-left: 15px;
+  float: left;
+  transition: 0.8s;
+}
+.project a{
+  color: #fff;
+  text-decoration: none;
+}
+.box:hover{
+   background: #b678ff22;
+}
+@media only screen and (max-width: 750px){
+  
+.text1{
+  color: var(--yazi1);
+  font-size: 40px;
+  font-weight: 650;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  background: var(--back1);
+  position: relative;
+  animation: text 5s 1;
+  text-transform: uppercase;
+  display: block;
+}
+.text2{
+  font-size: 20px;
+  color: var(--yazi2);
+}
+
+@keyframes text {
+  0%{
+    color: var(--back1);
+    margin-bottom: -40px;
+  }
+    15%{
+    color: var(--back1);
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+  .profiles{
+  border-radius: 15%;
+  width: auto;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  color: var(--yazi2);
+  font-family: monospace;
+  background:  var(--back1);
+}
+.profiles img {
+  border-radius: 25px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  border-style: dotted;
+ border-width: 3px;
+}
+.bkz h1{
+  font-size: 40px;
+letter-spacing: 4px;
+font-weight: 100;
+}
+.bkz h4{
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.zuzia{
+  color: var(--yazi1);
+}
+
+  .card{
+  border-radius: 15%;
+  width: auto;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  color: var(--yazi2);
+  font-family: monospace;
+  background:  var(--back1);
+}
+.text h4{
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.project{
+  border-radius: 15px;
+  width: 400px;
+  height: 385px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+  margin-top: 85px;
+  margin-bottom: 130px;
+  color: var(--yazi2);
+  font-family: monospace;
+  border: 1px solid var(--back1);
+}
+
+.box{
+  border-radius: 15px;
+  width: 350px;
+  height: 50px;
+  background:  var(--back3);
+  margin-top: 15px;
+  margin-left: 5px;
+}
+  
+}
+

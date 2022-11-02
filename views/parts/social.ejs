@@ -1,0 +1,146 @@
+<div class="social">
+      <span class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+
+      <div class="media-icons">
+        <a href="https://discord.com/users/890626326350946364" style="background: #5d67f8">
+          <i class="fa-brands fa-discord"></i>
+          <span class="tooltip" style="color: #5d67f8">Discord</span>
+        </a>
+        <a href="https://youtube.com/c/Zuzia2" style="background: #ff0000">
+          <i class="fa-brands fa-youtube"></i>
+          <span class="tooltip" style="color: #ff0000">YouTube</span>
+        </a>
+        <a href="https://github.com/ZuziaDev" style="background: #8e36ff">
+          <i class="fa-brands fa-github"></i>
+          <span class="tooltip" style="color: #8e36ff">Github</span>
+        </a>
+<!--        <a href="#" style="background: #1da1f2">
+          <i class="fa-brands fa-twitter"></i>
+          <span class="tooltip" style="color: #1da1f2">Twitter</span>
+        </a>-->
+        <a href="https://www.instagram.com/ridvan.veli.0" style="background: linear-gradient(to left, #405DE6, #5851DB, #833ab4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);}">
+          <i class="fa-brands fa-instagram"></i>
+          <span class="tooltip" style="color: #833ab4">İnstagram</span>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      const closeBtn = document.querySelector(".close-btn");
+
+      closeBtn.addEventListener("click", () => {
+        closeBtn.classList.toggle("open");
+      });
+    </script>
+
+<style>
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: monospace;
+}
+.social {
+  position: fixed;
+  top: 65%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.media-icons {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #111;
+  padding: 6px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.close-btn.open ~ .media-icons {
+  transform: translateX(0);
+}
+.media-icons a {
+  text-decoration: none;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin: 6px;
+}
+.media-icons a i {
+  color: #fff;
+}
+.media-icons a .tooltip {
+  position: absolute;
+  right: 55px;
+  font-size: 15px;
+  font-weight: 1000;
+  pointer-events: none;
+  background-color: #222;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transform: translateZ(25px);
+  opacity: 0;
+  transition: all 0.2s linear;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+a:hover .tooltip {
+  opacity: 1;
+  transform: translateZ(0);
+}
+a .tooltip::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  top: 8px;
+  right: -8px;
+  transform: translateX(-50%) rotate(45deg);
+  background-color: #222;
+}
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: #8e36ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transform: rotate(45deg);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.close-btn.open {
+  transform: rotate(90deg);
+  background-color: #de0611;
+}
+  .fa-github{
+    font-size: 20px;
+  }
+  .fa-instagram{
+    font-size: 20px;
+  }
+  .fa-youtube{
+    font-size: 20px;
+  }
+  .fa-discord{
+    font-size: 20px;
+  }
+</style>
